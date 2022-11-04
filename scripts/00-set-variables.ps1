@@ -7,25 +7,25 @@ $sqlDatabaseMaxSize = if ($env:SQL_DB_MAX_SIZE) { $env:SQL_DB_MAX_SIZE } else { 
 $sqlDatabaseCapacity = if ($env:SQL_DB_CAPACITY) { $env:SQL_DB_CAPACITY } else { '1' }
 
 # core
-$projectName="proj1todo$environmentName"
+$projectName="todoproject$environmentName"
 $rg="rg-$($projectName)"
 $location='westus'
 
 # sql server
-$sqlServerName="sql$($projectName)"
+$sqlServerName="todosql$($projectName)"
 $sqlUserName='sqluser'
 $sqlPassword=$env:LAB_PASSWORD
 
 # sql database
-$sqlDatabaseName="sqldb-$($projectName)"
+$sqlDatabaseName="todosqldb-$($projectName)"
 $sqlDatabaseEdition='GeneralPurpose'
 $sqlDatabaseFamily='Gen5'
 
 # app service plan
-$appPlanName="asp-$($projectName)"
+$appPlanName="todoasp-$($projectName)"
 
 # app service
 $webAppName="web$($projectName)"
-$webAppGitHubUrl='https://github.com/sixeyed/azdev-project-1.git'
+$webAppGitHubUrl='https://github.com/kopicoffe/azdev-project-1.git'
 $webAppGitBranch='main'
 $webAppGitHubToken=$env:GH_TOKEN
