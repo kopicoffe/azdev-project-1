@@ -1,2 +1,2 @@
 $env:LAB_PASSWORD='Welcome@1994'
-$env:GH_TOKEN='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'
+$env:GH_TOKEN='Passw0rd@2022'
